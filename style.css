@@ -421,3 +421,86 @@ button {
     padding: 0;
     margin-top: 25px;
 }
+
+.footer-contacts button:hover,
+.footer-contacts button:focus {
+    background-color: #e74246;
+}
+
+.footer-social-icons {
+    display: flex;
+    width: 260px;
+    min-height: 80px;
+    margin: 0;
+    padding: 0;
+    margin-right: 180px;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.footer-social-icons a {
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.footer-social-icons a::before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.footer-social-icons a:hover::before,
+.footer-social-icons a:focus::before {
+    background-color: #e74246;
+}
+
+.footer-social-icons a:active::before {
+    background-color: #d7373b;
+}
+
+.footer-social-icons li {
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+}
+
+.footer-social-icons li:first-child {
+    background-image: url(img/vk-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-social-icons li:nth-child(2) {
+    background-image: url(img/fb-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-social-icons li:nth-child(3) {
+    background-image: url(img/insta-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-social {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.footer-social-text strong {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
