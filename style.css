@@ -110,6 +110,29 @@ button {
     padding-left: 22px;
 }
 
+.logo-link:hover,
+.logo-link:focus {
+    opacity: 0.8;
+}
+
+.logo-link:active {
+    opacity: 0.3;
+}
+
+.main-navigation--current {
+    position: relative;
+}
+
+.main-navigation--current::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: #f7898b;
+}
+
 /*--------------------------SLIDER-------------------------------------------*/
 
 .slide-title {
@@ -714,4 +737,17 @@ button {
 .modal-close:active::before,
 .modal-close:active::after {
     background-color: #ffeeee;
+}
+
+.catalog-title {
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-top: 65px;
+    padding-bottom: 105px;
+    text-align: center;
+    font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+    font-weight: 500;
 }
