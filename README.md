@@ -1,2 +1,2 @@
 # nerds
- https://holdonl.github.io/nerds/
+ Тестовый макет HTML Academy "Nerds"
