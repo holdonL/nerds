@@ -135,17 +135,21 @@ button {
 
 /*--------------------------SLIDER-------------------------------------------*/
 
+.main-slider {
+    position: relative;
+}
+
 .slide-title {
+    width: 520px;
+    display: block;
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
     color: #000000;
 }
 
-.slide-1 {
-    display: flex;
-    flex-direction: column;
-    width: 380px;
+.slides {
+    width: 100%;
     min-height: 280px;
     margin: 0;
     padding: 0;
@@ -153,7 +157,70 @@ button {
     padding-bottom: 80px;
 }
 
-.slide-1 p {
+.slider__button {
+    position: absolute;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px rgba(24, 23, 23, 0.521);
+    border-radius: 50%;
+    background-color: rgba(24, 23, 23, 0.521);
+}
+
+.slider__button--active {
+    background-color: #db282b;
+}
+
+.slider__button--1 {
+    top: 90%;
+    left: 46%;
+}
+
+.slider__button--2 {
+    top: 90%;
+    left: 48%;
+}
+
+.slider__button--3 {
+    top: 90%;
+    left: 50%;
+}
+
+.slide-1 {
+    display: block;
+    background-image: url(img/nerds-index-slide1.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+.slide-2 {
+    display: none;
+    background-image: url(img/slide2.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 55%;
+}
+
+.slide-3 {
+    display: none;
+    background-image: url(img/slide3.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+.slide--show {
+    display: block;
+}
+
+.slide--hide {
+    display: none;
+}
+
+.slides p {
+    width: 385px;
+    display: block;
     margin: 0;
     padding: 0;
     margin-bottom: 40px;
@@ -182,25 +249,18 @@ button {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.slide-1 a {
+.slides a {
     width: 240px;
     background-color: #fb565a;
 }
 
-.slide-1 a:hover,
-.slide-1 a:focus {
+.slides a:hover,
+.slides a:focus {
     background-color: #e74246;
 }
 
-.slide-1 a:active {
+.slides a:active {
     background-color: #d7373b;
-}
-
-.image-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
 }
 
 /*---------------------services-----------------------------------------------*/
@@ -431,10 +491,6 @@ button {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-}
-
-.clients li {
-    
 }
 
 .clients-list li img {
